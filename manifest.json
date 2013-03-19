@@ -1,0 +1,18 @@
+{
+	"name": "readerTofeedly",
+	"manifest_version": 2,
+	"version": "1.1.1",
+	"description": "__MSG_extensionDescription__",
+	// icons to display in the extensions admin and chrome web store
+	"icons": { "128": "img/icon128.png" },
+	// permissions to access data in the browser
+	"permissions": ["tabs", "http://*/*"],
+	 "content_scripts": [{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["js/main.js"],
+		"run_at": "document_start"
+	}],
+	"background": {},
+	"options_page": "options.html",
+	"default_locale": "es"
+}
