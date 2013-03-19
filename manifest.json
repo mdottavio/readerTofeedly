@@ -3,9 +3,7 @@
 	"manifest_version": 2,
 	"version": "1.1.1",
 	"description": "__MSG_extensionDescription__",
-	// icons to display in the extensions admin and chrome web store
 	"icons": { "128": "img/icon128.png" },
-	// permissions to access data in the browser
 	"permissions": ["tabs", "http://*/*"],
 	 "content_scripts": [{
 		"matches": ["http://*/*", "https://*/*"],
